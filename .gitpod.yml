@@ -1,14 +1,16 @@
 tasks:
   - name: Dash
     before: |
-      pyenv install 3.11 
+      pyenv versions
+      pyenv install 3.11
       pyenv global 3.11
+      pyenv version
+      pyenv which pip
       pip install --upgrade pip
       pip install pipenv
       python -V
       pip install pipenv
       pipenv shell
-      pipenv install
 
 
 vscode:
