@@ -10,6 +10,7 @@ app = Dash(__name__)
 app.layout = html.Div([
     html.H1(children='Select a State to Analyze', style={'textAlign': 'center'}),
     dcc.Dropdown(options=['California', 'Oregon', 'Washington'], id='dropdown-selection'),
+    html.Br(),
     html.H3(id="country-output")
 ])
 
