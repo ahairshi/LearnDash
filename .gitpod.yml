@@ -1,0 +1,19 @@
+tasks:
+  - name: Dash
+    before: |
+      pyenv install 3.11 
+      pyenv global 3.11
+      pip install --upgrade pip
+      pip install pipenv
+      python -V
+      pip install pipenv
+      pipenv shell
+      pipenv install
+
+
+vscode:
+  extensions:
+    - phil294.git-log--graph
+    - mhutchie.git-graph
+    - phil294.git-log--graph
+    - almenon.arepl
